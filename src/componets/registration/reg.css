@@ -1,0 +1,33 @@
+
+
+.registration{
+    background: url('//t-cf.bstatic.com/static/img/genius-banner-world-bg/2b5cdbad7b92073bc396b8b59d0bb421b3a01cba.png') 100% 0 no-repeat;
+    display: flex;
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+}
+.registration .registration-details p{
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+.registration .registration-details .sign-btn{
+    color: #0071c2;
+    border: 1px solid #0071c2;
+    padding: 8px 16px;
+    background-color: #FFF;
+    font-weight: bold;
+}
+.registration .registration-details .reg-btn{
+    color: #0071c2;
+    border: none;
+    padding: 8px 16px;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+@media screen and (max-width:500px) {
+    .registration {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

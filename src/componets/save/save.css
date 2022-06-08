@@ -1,0 +1,26 @@
+.save-container{
+    margin-bottom: 30px;
+}
+.save-items{
+    display: flex;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    gap: 20px;
+}
+.save-items span{
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.save-items button{
+    margin-top: 15px;
+}
+.save-items img{
+   height: 150px;
+   width: 150px;
+   object-fit: cover;
+}

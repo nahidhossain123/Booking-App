@@ -1,0 +1,94 @@
+.discount-item{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 50px;
+}
+
+.discount-text h1{
+    font-size: 24px;
+    margin-right: 390px;
+    margin-bottom: 10px;
+}
+.discount-text a{
+    color: #0071c2;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+.discount-text a:hover{
+    border-bottom: 1px solid #0071c2;
+}
+
+.discount-image::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    height: 100%;
+    transform: skew(-7deg,0deg) translateX(-50%);
+}
+
+.discount-image{
+    height: 100%;
+    width: 100%;
+    max-width: 390px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.discount-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:900px) {
+    .discount-text h1 {
+        font-size: 18px;
+        margin-right: 260px;
+    }
+    .discount-image {
+        max-width: 260px;
+    }
+
+    .discount-image::before {
+        width: 17px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .discount-item {
+        flex-wrap: wrap;
+    }
+    .discount-text h1 {
+        font-size: 18px;
+        margin-right: 230px;
+    }
+    .discount-image {
+        max-width: 230px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .discount-item {
+        flex-wrap: wrap-reverse;
+    }
+    .discount-text h1 {
+        font-size: 18px;
+        margin-right: unset;
+        margin-bottom: 0;
+        margin-top: 0.6rem;
+    }
+    .discount-image {
+        position: unset;
+        max-width: 100%;
+    }
+    .discount-image::before {
+        content: unset;
+    }
+}
