@@ -1,7 +1,7 @@
 .search-list-contaienr{
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     margin-bottom: 3rem;
 }

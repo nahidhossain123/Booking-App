@@ -51,7 +51,7 @@ const Slidergal = ({explore,title,desc,community,slide}) => {
           {
             explore.map(explore_item =>(
               <div className='slider-item'>
-              <img src={explore_item.img}/>
+              <img src={explore_item.img} alt="gallery" />
               <div className='details'>
                   <span className='title'>{explore_item.title}</span>
                   <span className='community'>{community}</span>
