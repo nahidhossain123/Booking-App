@@ -14,7 +14,7 @@ const Featured = ({direction,overlay,gal1,gal2}) => {
                 className="featuredImg"
               />
               <div className="featuredTitles">
-                <h3>{gal_item.title} <img src={gal_item.flag} alt="gallery" /></h3>
+                <h3>{gal_item.title} {gal_item.flag && <img src={gal_item.flag} alt="gallery" />}</h3>
                 <p>{gal_item.desc}</p>
               </div>
               <div className={direction === "columnreverse" ? "reverse-overlay" : "overlay"}></div>
@@ -33,7 +33,7 @@ const Featured = ({direction,overlay,gal1,gal2}) => {
                 className="featuredImg"
               />
               <div className="featuredTitles">
-                <h3>{gal2_item.title}<img src={gal2_item.flag} alt="gallery" /></h3>
+                <h3>{gal2_item.title} {gal2_item.flag && <img src={gal2_item.flag} alt="gallery" />}</h3>
                 <p>{gal2_item.desc}</p>
               </div>
               <div className={direction === "columnreverse" ? "reverse-overlay" : "overlay"}></div>
