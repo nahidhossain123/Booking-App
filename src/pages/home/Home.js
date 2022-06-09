@@ -2,7 +2,6 @@ import React from 'react';
 import Featured from '../../componets/Featured/Featured';
 import Header from '../../componets/header/Header';
 import Navbar from '../../componets/navbar/Navbar';
-import {Link} from 'react-router-dom';
 import './home.css';
 
 import Info from '../../componets/info/Info';
