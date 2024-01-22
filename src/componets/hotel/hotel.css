@@ -1,0 +1,15 @@
+.hotel {
+  display: flex;
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  border-radius: 5px;
+}
+.hotel img {
+  border-radius: 5px;
+}
+.hotel .destials {
+  margin-left: 10px;
+}
+.hotel .destials p {
+  font-size: 12px;
+}

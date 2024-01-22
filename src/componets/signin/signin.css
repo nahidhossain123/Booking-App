@@ -1,0 +1,38 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.signin-container .signin-items {
+  width: 360px;
+}
+.signin-container .title {
+  font-size: 25x;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.signin-container form div {
+  margin-top: 15px;
+}
+
+.signin-container form label span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.signin-container form input {
+  border: 1px solid #acacac;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+.signin-container form button {
+  background-color: #006ce4;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  color: white;
+  border: none;
+  font-size: 17px;
+  letter-spacing: 4px;
+}

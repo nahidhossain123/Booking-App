@@ -1,0 +1,115 @@
+.discover-section-container {
+  margin-top: 20px;
+}
+.discover-section-container a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 230px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  text-align: left;
+  color: white;
+  padding: 16px;
+}
+
+.discover-item-container {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #006ce4;
+  border-radius: 50%;
+  margin: -100px 0;
+  padding-left: 10%;
+}
+.discover-animated-text-container {
+  overflow: hidden;
+  height: 32px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.discover-item-container div {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.discover-animated-list {
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+  animation-duration: 15s;
+  animation-name: textAnimation;
+  animation-iteration-count: infinite;
+  transform: translateY(0);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  will-change: transform;
+  margin-left: 7px;
+}
+.discover-animated-list li {
+  height: 40px;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: #ffb700;
+}
+
+.discover-btn {
+  margin-top: 10px;
+  background-color: white;
+  color: #006ce4;
+  min-width: 50%;
+  max-width: 70%;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+@keyframes textAnimation {
+  8% {
+    transform: translateY(0);
+  }
+  13% {
+    transform: translateY(-40px);
+  }
+  21% {
+    transform: translateY(-40px);
+  }
+  26% {
+    transform: translateY(-80px);
+  }
+  34% {
+    transform: translateY(-80px);
+  }
+  39% {
+    transform: translateY(-120px);
+  }
+  47% {
+    transform: translateY(-120px);
+  }
+  52% {
+    transform: translateY(-160px);
+  }
+  60% {
+    transform: translateY(-160px);
+  }
+  65% {
+    transform: translateY(-200px);
+  }
+  95% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(-240px);
+  }
+}
+
+.discover-image {
+  max-width: 360px;
+  width: 100%;
+  padding-left: 32px;
+  margin-right: 32px;
+}
+.discover-image img {
+  width: 100%;
+}
