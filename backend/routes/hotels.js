@@ -7,9 +7,10 @@ import {
   getHotels,
   updateHotel,
 } from "../Controller/hotelController.js";
+import upload from "../middlewares/uploadFile.js";
 
 const router = express.Router();
-router.post("/", createHotel);
+router.post("/", upload.array("images"), createHotel);
 router.put("/:id", updateHotel);
 router.delete("/:id", deleteHotel);
 router.get("/:id", getHotel);
