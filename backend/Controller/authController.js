@@ -3,12 +3,14 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 export const register = async (req, res, next) => {
+  console.log("FIle", req);
   const salt = bcrypt.genSaltSync(10);
   const hash = bcrypt.hashSync(req.body.password, salt);
   const newUser = new User({
     username: req.body.username,
     email: req.body.email,
     password: hash,
+    photos: req.file.filename,
   });
 
   try {
